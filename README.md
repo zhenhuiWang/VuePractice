@@ -1,8 +1,10 @@
-#### 运行预览
+### 运行预览
 
 1.npm install
 
 2.npm run dev 在3000 port打开
+
+### 说明
 
 主要包括了对vue, vue-router, vuex学习的小练习
 
