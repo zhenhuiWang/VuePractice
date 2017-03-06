@@ -75,6 +75,7 @@ module.exports = {
             vue$: 'vue/dist/vue.js',
         },
     },
+    
     plugins: [
         new webpack.LoaderOptionsPlugin({
             options: {
