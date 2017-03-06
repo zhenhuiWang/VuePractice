@@ -1,6 +1,6 @@
 // 导入模块
-const Vue = require('vue');
-const VueRouter = require('vue-router');
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
 import Demo from './components/Demo.vue';
 import Example from './components/Example.vue';

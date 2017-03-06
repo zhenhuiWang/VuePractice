@@ -54,16 +54,17 @@ export default {
 
             ],
             filterText: '',
-        }
+        };
     },
+
     computed: {
         filterResult: function() {
-            return this.productLists.filter( product => {
+            return this.productLists.filter(product => {
                 return product.text.toUpperCase().includes(this.filterText.toUpperCase());
             });
-        }
-    }
-}
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>

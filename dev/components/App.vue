@@ -33,8 +33,8 @@ export default {
         Example,
         Store,
 
-    }
-}
+    },
+};
 </script>
 
 <style lang='scss' scoped>

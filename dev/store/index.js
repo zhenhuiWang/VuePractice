@@ -1,7 +1,7 @@
 // 组装模块并导出store
 
-const Vue = require('vue');
-const Vuex = require('vuex');
+import Vue from 'vue';
+import Vuex from 'vuex';
 
 import state from './state';
 import getters from './getters';

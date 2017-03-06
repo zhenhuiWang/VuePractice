@@ -3,6 +3,9 @@
         "browser": true,
         "node": true,
     },
+    "plugins": [
+        "html",
+    ],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
@@ -210,5 +213,5 @@
         "valid-typeof": "error", // 强制 typeof 表达式与有效的字符串进行比较
         "no-new-wrappers": "error", // 禁止通过 new 操作符使用 String、Number 和 Boolean
         "handle-callback-err": "error", // 强制回调错误处理
-    }
+    },
 }

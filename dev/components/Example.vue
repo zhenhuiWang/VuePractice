@@ -1,7 +1,7 @@
 <template lang="html">
     <div>
         <p>
-            <router-link :to="{name:'tab', params: {id: 1}}">go to example{{$route.params.id}}</router-link>
+            <router-link :to="{name:'tab', params: {id: 1}, query: {plan: 'private'}}">go to example{{$route.params.id}}</router-link>
             <router-link to="/example/editbox" tag="li" active-class="active">go to example2</router-link>
             <router-link to="/example/calculator">go to example3</router-link>
             <router-link to="/example/search">go to example4</router-link>
