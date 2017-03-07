@@ -43,21 +43,22 @@ export default {
 
             ],
 
-        }
+        };
     },
 
     computed: {
         sum: function() {
             let price = 0;
             this.categorys.forEach(category => {
-                if(category.checked){
+                if (category.checked) {
                     price += category.price;
                 }
-            })
+            });
+
             return price;
-        }
-    }
-}
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>

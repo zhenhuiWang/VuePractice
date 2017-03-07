@@ -22,7 +22,7 @@ module.exports = {
                 use: [
                     'babel-loader',
                 ],
-                exclude: /node_module/,
+                exclude: /node_module/, // 排除node_modules文件夹
             },
             {
                 test: /\.css$/,
@@ -74,8 +74,9 @@ module.exports = {
         alias: {
             vue$: 'vue/dist/vue.js',
         },
+        extensions: ['.js', '.jsx'],
     },
-    
+
     plugins: [
         new webpack.LoaderOptionsPlugin({
             options: {
@@ -86,6 +87,7 @@ module.exports = {
                         sass: 'style-loader!css-loader!postcss-loader!sass-loader?indentedSyntax',
                         scss: 'style-loader!css-loader!postcss-loader!sass-loader',
                     },
+                    // 定制css-loader
                     cssModules: {
                         localIdentName: '[path][name]---[local]---[hash:base64:5]',
                         camelCase: true,
