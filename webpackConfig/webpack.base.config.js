@@ -68,7 +68,7 @@ module.exports = {
 
         ],
     },
-
+ 
     resolve: {
          // 别名，可以直接使用别名来代表设定的路径以及其他
         alias: {
@@ -81,6 +81,7 @@ module.exports = {
         new webpack.LoaderOptionsPlugin({
             options: {
                 postcss: postcssConfig.plugins,
+                // vue-loader的option配置
                 vue: {
                     postcss: postcssConfig.plugins,
                     loaders: {
