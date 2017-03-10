@@ -98,6 +98,12 @@ export default {
                 age: 18,
                 sex: 'female',
             },
+            arrayLike: {
+                '0': 'a',
+                '1': 'b',
+                '2': 'c',
+                length: 3
+            },
             numbers: [0,1,2,3,4,5],
             name: 'janet',
             checked: false,
@@ -124,7 +130,7 @@ export default {
         }
 
     },
-    //没有缓存
+    // 没有缓存
     methods: {
         now: function () {
             return Date.now()
@@ -132,6 +138,7 @@ export default {
         greet: function (e) {
             alert(`hello ${this.name}`);
             alert(e.target.tagName);
+            console.log(Array.from(this.arrayLike));
         }
     },
     watch: {
