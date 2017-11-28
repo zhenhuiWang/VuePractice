@@ -8,8 +8,8 @@ export default {
             text,
         });
     },
-    [types.INCREMENT](state, n) {
+    [types.INCREMENT](state, number) {
         // 变更状态
-        state.count += n;
+        state.count += number;
     },
 };

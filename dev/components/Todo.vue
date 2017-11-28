@@ -5,9 +5,7 @@
             <li v-for="(todo, index) in todos">
                 {{todo.text}}
                 <button type="button" name="button" @click="remove(index)">X</button>
-
             </li>
-
         </ul>
     </div>
 </template>
@@ -32,6 +30,7 @@ export default {
         ...mapActions([
             'addTodo'
         ]),
+
         remove: function(index) {
             this.todos.splice(index, 1);
         }
