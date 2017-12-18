@@ -2,9 +2,9 @@
 
 ### 运行预览
 
-1.npm install
+1.`npm install`
 
-2.npm run dev 打开
+2.`npm run dev` 打开
 
 ### 说明:
 
