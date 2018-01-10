@@ -107,6 +107,11 @@
                   <span>{{props.text}}</span>
               </template>
           </Layout>
+          <form action="https://segmentfault.com/" method="get">
+              <p>First name: <input type="text" name="fname" /></p>
+              <p>Last name: <input type="text" name="lname" /></p>
+              <input type="submit" value="提交" />
+          </form>
     </div>
 
 </template>

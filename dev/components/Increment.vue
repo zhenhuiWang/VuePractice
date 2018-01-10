@@ -11,6 +11,7 @@ import { mapGetters } from 'vuex';
 import { mapActions } from 'vuex';
 import { mapState } from 'vuex';
 
+console.log(mapState(['count']), '======---');
 export default {
     data: () => {
         return{
